@@ -53,9 +53,9 @@ hr {
 	transition-duration: 0.4s;
 }
 
-
 .button:hover {
 	background-color: #E6CBC8;
+	border: 0.1px solid #E6CBC8;
 }
 
 .center {
@@ -68,12 +68,6 @@ hr {
     text-align:left;
  }
 
-#content {
-	width: 700px ;
-	margin-left: auto ;
-	margin-right: auto ;
-}
-
 #title {
 	width: 700px ;
 	margin-left: auto ;
@@ -81,4 +75,16 @@ hr {
 	text-align: center;
 }
 
+.content {
+	width: 700px ;
+	margin-left: auto ;
+	margin-right: auto ;
+}
 
+.content p {
+	-webkit-column-count:2 ;
+	column-count:2;
+	-webkit-column-gap: 50px;
+	column-gap: 50px;
+	text-align: left;
+}
