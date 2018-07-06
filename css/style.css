@@ -3,6 +3,10 @@ html {
 	background-color: #FFE4E1
 }
 
+p {
+	font-size:16px;
+}
+
 body {
 	font-family: "Helvetica"
 }
@@ -144,7 +148,8 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color : #E6CBC8; 
 }
 
 /* Style the submit button with a specific background color etc */
@@ -165,3 +170,5 @@ input[type=submit]:hover {
     padding: 20px;
     border:1px solid black;
 }
+
+
