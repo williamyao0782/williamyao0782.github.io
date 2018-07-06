@@ -1,4 +1,4 @@
-/*Default settings!*/
+/*Background colour*/
 html {
 	background-color: #FFE4E1
 }
@@ -9,6 +9,20 @@ body {
 
 h1 {
 	font-size: 45px;
+}
+
+video {
+	width: 700px;
+	height:525px;
+}
+
+/*Formatted, centered division line*/
+hr {
+	width: 700px ;
+	margin-left: auto ;
+	margin-right: auto;
+    display: block;
+    height: 2px;
 }
 
 h2 {
@@ -24,50 +38,7 @@ li {
 	list-style-type: none;
 }
 
-video {
-	width: 700px;
-	height:525px;
-}
-
-a:link {color: black;}     
-a:visited {color: black;}   
-a:hover {color: black;}     
-a:active {color: black;}
-
-hr {
-	width: 700px ;
-	margin-left: auto ;
-	margin-right: auto;
-    display: block;
-    height: 2px;
-}
-
-/*Buttons!*/
-
-.button {
-	padding:8px 30px 8px 30px; /*Create the padding for the button*/
-	display:inline-block;
-	text-decoration: none;
-	background-color:#FFE4E1;
-	border: 0.1px solid black;
-	transition-duration: 0.4s;
-}
-
-.button:hover {
-	background-color: #E6CBC8;
-	border: 0.1px solid #E6CBC8;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-}
-
-.left {
-    text-align:left;
- }
-
+/*ID for main name*/
 #title {
 	width: 700px ;
 	margin-left: auto ;
@@ -75,6 +46,7 @@ hr {
 	text-align: center;
 }
 
+/*ID for blurb under title*/
 #blurb {
 	width: 700px ;
 	margin-left: auto ;
@@ -83,13 +55,14 @@ hr {
 	font-size: 30px;
 }
 
-
+/*Class for main text divs, 600 witch and centered*/
 .content {
 	width: 700px ;
 	margin-left: auto ;
 	margin-right: auto ;
 }
 
+/*Class to separate any paragraphs inside divs with content class into two columns*/
 .content p {
 	-webkit-column-count:2 ;
 	column-count:2;
@@ -98,15 +71,40 @@ hr {
 	text-align: left;
 }
 
+/*Class to avoid separating alls paragraphs into two columns*/
 .content2 {
 	width: 700px ;
 	margin-left: auto ;
 	margin-right: auto ;
 }
 
+/*Class to centre elements*/
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
 
+/*My own buttons!*/
+.button {
+	padding:8px 30px 8px 30px; 
+	display:inline-block;
+	text-decoration: none;
+	background-color:#FFE4E1;
+	border: 0.1px solid black;
+	/*Hover colour change delay*/
+	transition-duration: 0.4s;
+}
+
+/*However colour change and border removal*/
+.button:hover {
+	background-color: #E6CBC8;
+	border: 0.1px solid #E6CBC8;
+}
+
+/*Font awesome case class buttons format; overrides linked css formatting*/
 .fa {
-	padding:8px 30px 8px 30px; /*Create the padding for the button*/
+	padding:8px 30px 8px 30px;
 	display:inline-block;
 	text-decoration: none;
 	background-color:#FFE4E1;
@@ -114,7 +112,56 @@ hr {
 	transition-duration: 0.4s;
 }
 
+/*Overriding font awesome class buttons*/
 .fa:hover {
 	background-color: #E6CBC8;
 	border: 0.1px solid #E6CBC8;
+}
+
+/*Prevent discolouring of links*/
+a:link {color: black;}     
+a:visited {color: black;}   
+a:hover {color: black;}     
+a:active {color: black;}
+
+.divider {
+	background-color: solid black;
+  	width: 7%;
+  	height: 0px;
+  	border: 1px solid black;
+  	margin-left:0px;
+  	text-align:left;
+
+}
+
+/*Form*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #FFE4E1; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #FFE4E1;
+    color: black;
+    padding:8px 30px 8px 30px
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: #E6CBC8;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    background-color: #FFE4E1;
+    padding: 20px;
+    border:1px solid black;
 }
